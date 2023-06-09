@@ -3,7 +3,8 @@ function calcular(event) {
     const inputPeso = document.getElementById("peso");
     const inputAltura = document.getElementById("altura");
     const peso = inputPeso.value;
-    const altura = inputAltura.value;
+    const altura = inputAltura.value/100;
+    const imc = peso / (altura*altura);    
     
     if (peso > 300 || peso < 1) {
         inputPeso.style.border = "1px solid red";
@@ -16,4 +17,5 @@ function calcular(event) {
     } else {
         inputAltura.style.border = "1px solid white";
     }
+
 }
