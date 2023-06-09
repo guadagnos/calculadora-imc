@@ -22,7 +22,7 @@ input {
     border-radius: 10px;      
     width: 180px;
     height: 30px;  
-    border: none;
+    border: 1px solid white;
     outline: none;    
 }
 
@@ -50,6 +50,11 @@ input[type=number]::-webkit-outer-spin-button {
     background: #CAEFC9;
     font-family: 'Roboto', sans-serif;
 }
+
+.botao:hover {
+    background: #aac9a9;
+}
+
 .resultado {
     font-size: 15px;
     text-align: center;
@@ -73,4 +78,13 @@ input[type=number]::-webkit-outer-spin-button {
 body {
     margin: 0 auto;
     height: 100vh;
+}
+
+button:hover {
+    cursor: pointer;
+    transition: 0.5s ease-in;
+}
+
+button {
+    transition: 0.5s ease-out;
 }
