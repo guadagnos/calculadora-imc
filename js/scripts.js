@@ -17,8 +17,10 @@ function calcular(event) {
         inputAltura.style.border = "1px solid white";
     }
 
-    if (peso < 300 || peso > 1 && altura < 3 || altura > 0.2) {
+    if (peso < 300 && peso > 1 && altura < 3 && altura > 0.2) {
         const imc = peso / (altura*altura);
-        console.log(imc);
+        const imcArredondado = imc.toFixed(2);
+        console.log(imcArredondado);
+        
     }    
 }
