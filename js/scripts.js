@@ -8,14 +8,14 @@ function calcular(event) {
     
     if (peso > 300 || peso < 1) {
         inputPeso.style.border = "1px solid red";
-        resultado="undefined";
+        resultado="Erro: os campos devem seguir os seguintes limites \n Peso: entre 300kg e 1kg \n Altura: entre 300cm e 20cm";
     } else {
         inputPeso.style.border = "1px solid white";
     }
 
     if (altura > 3 || altura < 0.2) {
         inputAltura.style.border = "1px solid red";
-        resultado="undefined";
+        resultado="Erro: os campos devem seguir os seguintes limites \n Peso: entre 300kg e 1kg \n Altura: entre 300cm e 20cm";
     } else {
         inputAltura.style.border = "1px solid white";
     }
